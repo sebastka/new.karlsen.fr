@@ -13,12 +13,12 @@
 
 	<body>
 		<table>
-			<tr>
+			<tr class="prompt">
 				<td class="username">
 					<p>sebastian</p>
 				</td>
 				
-				<td class="default">
+				<td>
 					<p>@</p>
 				</td>
 				
@@ -26,7 +26,7 @@
 					<pre><?php require_once('karlsen.fr.ascii'); ?></pre>
 				</td>
 
-				<td class="default">
+				<td>
 					<p>:</p>
 				</td>
 

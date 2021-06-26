@@ -7,6 +7,7 @@ html, body {
 	padding: 0;
 }
 
+/* Center whole table */
 table {
 	width: 100%;
 	height: 100%;
@@ -16,34 +17,34 @@ table {
 	justify-content: center;
 }
 
-td.default {
+/* Sytle prompt */
+.prompt td {
 	color: #ebdbb2;
 	vertical-align: bottom;
 }
 
-td.username {
+.prompt td.username {
 	color: #fabd2f;
-	vertical-align: bottom;
 }
 
-td.hostname {
+.prompt td.hostname {
 	font-size: 200%;
 	color: #98971a;
 }
 
-td.dir {
+.prompt td.dir {
 	color: #7ba46d;
-	vertical-align: bottom;
 }
 
+/* Style social media links */
 tr.links {
 	text-align: center;
 }
 
-tr.links img.invert {
+.links img.invert {
 	filter: invert(1);
 }
 
-tr.links a {
+.links a {
 	padding: 1%;
 }
