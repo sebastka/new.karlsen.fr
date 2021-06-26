@@ -14,32 +14,22 @@
 	<body>
 		<table>
 			<tr class="prompt">
-				<td class="username">
-					<p>sebastian</p>
-				</td>
-				
-				<td>
-					<p>@</p>
-				</td>
-				
+				<td class="username"><p>sebastian</p></td>
+				<td><p>@</p></td>
+
 				<td class="hostname">
 					<pre><?php require_once('karlsen.fr.ascii'); ?></pre>
 				</td>
 
-				<td>
-					<p>:</p>
-				</td>
-
-				<td class="dir">
-					<p>~</p>
-				</td>
+				<td><p>:</p></td>
+				<td class="dir"><p>~</p></td>
 			</tr>
 
 			<tr class="links">
 				<td colspan="5">
 					<a href="https://github.com/sebastka" title="Github" target="_blank"><img src="github.svg" alt="Github" class="invert"></a>
 					<a href="https://www.linkedin.com/in/sebastka/" title="LinkedIn" target="_blank"><img src="linkedin.svg" alt="LinkedIn" class="invert"></a>
-					<a href="sebastian@karlsen.fr.asc" title="PGP" target="_blank"><img src="key.svg" alt="PGP" class="invert"></a>
+					<a href="sebastian@karlsen.fr.asc" title="PGP"><img src="key.svg" alt="PGP" class="invert"></a>
 				</td>
 			</tr>
 		</table>
