@@ -48,3 +48,8 @@ tr.links {
 .links a {
 	padding: 1%;
 }
+
+.links a .obfuscate {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
