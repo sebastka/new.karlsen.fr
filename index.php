@@ -1,33 +1,17 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
+<?php
 
-		<title>karlsen.fr</title>
-		<meta name="description" content="Sebastian Karlsen's portfolio">
-		<meta name="keywords" content="karlsen, sebastian, portfolio">
-		<meta name="author" content="Sebastian Karlsen">
+require_once('vendor/autoload.php');
 
-		<link rel="stylesheet" href="style.css">
-	</head>
+$loader = new \Twig\Loader\FilesystemLoader('template/');
+$twig = new \Twig\Environment($loader,
+//	[ 'cache' => 'cache/' ]
+);
 
-	<body>
-		<table>
-			<tr class="prompt">
-				<td class="username"><p>sebastian</p></td>
-				<td><p>@</p></td>
-				<td class="hostname"><pre><?php require_once('karlsen.fr.ascii'); ?></pre></td>
-				<td><p>:</p></td>
-				<td class="dir"><p>~</p></td>
-			</tr>
+echo $twig->render('index.html',
+	[
+		'ascii_karlsen' => file_get_contents('ressources/ascii_art/karlsen.fr.ascii'),
+		'base64_email' => base64_encode('ressources/keys/sebastian@karlsen.fr.asc')
+	]
+);
 
-			<tr class="links">
-				<td colspan="5">
-					<a href="https://github.com/sebastka" title="Github" target="_blank"><img src="github.svg" alt="Github" class="invert"></a>
-					<a href="https://www.linkedin.com/in/sebastka/" title="LinkedIn" target="_blank"><img src="linkedin.svg" alt="LinkedIn" class="invert"></a>
-					<a href="javascript:window.location.href=atob('<?php echo base64_encode('sebastian@karlsen.fr.asc') ?>')" title="PGP Public key"><img src="key.svg" alt="PGP" class="invert"></a>
-				</td>
-			</tr>
-		</table>
-	</body>
-</html>
+?>

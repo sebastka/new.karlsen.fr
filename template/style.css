@@ -41,7 +41,7 @@ tr.links {
 	text-align: center;
 }
 
-.links img.invert {
+.links img {
 	filter: invert(1);
 }
 

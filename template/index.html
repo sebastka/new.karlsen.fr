@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+		<table>
+			<tr class="prompt">
+				<td class="username"><p>sebastian</p></td>
+				<td><p>@</p></td>
+				<td class="hostname"><pre>{{ ascii_karlsen }}</pre></td>
+				<td><p>:</p></td>
+				<td class="dir"><p>~</p></td>
+			</tr>
+
+			<tr class="links">
+				<td colspan="5">
+					<a href="https://github.com/sebastka" title="Github" target="_blank"><img src="ressources/logo/github.svg" alt="Github"></a>
+					<a href="https://www.linkedin.com/in/sebastka/" title="LinkedIn" target="_blank"><img src="ressources/logo/linkedin.svg" alt="LinkedIn"></a>
+					<a href="javascript:window.location.href=atob('{{ base64_email }}')" title="PGP Public key"><img src="ressources/logo/key.svg" alt="PGP"></a>
+				</td>
+			</tr>
+		</table>
+{% include 'footer.html' %}
