@@ -16,11 +16,7 @@
 			<tr class="prompt">
 				<td class="username"><p>sebastian</p></td>
 				<td><p>@</p></td>
-
-				<td class="hostname">
-					<pre><?php require_once('karlsen.fr.ascii'); ?></pre>
-				</td>
-
+				<td class="hostname"><pre><?php require_once('karlsen.fr.ascii'); ?></pre></td>
 				<td><p>:</p></td>
 				<td class="dir"><p>~</p></td>
 			</tr>
