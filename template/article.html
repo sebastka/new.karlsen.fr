@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+	<section class="article">
+		<h2><a href="blog.php?a={{ article.id }}" title="{{ article.title }}">{{ article.title }}</a></h2>
+
+		<p>
+			{{ article.text }}
+		</p>
+
+		<p class="footer">Published {{ date }} | Comments: 0</p>
+	</section>
+{% include 'footer.html' %}

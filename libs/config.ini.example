@@ -1,0 +1,8 @@
+[site]
+site_title = ""
+
+[db]
+server = "localhost"
+user = "db_name"
+password = "password123"
+name = "db_name"

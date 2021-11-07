@@ -7,10 +7,47 @@ html, body {
 	padding: 0;
 }
 
+/*
+ * Navigation
+ */
+
+nav {
+	height: 10%;
+	text-align: right;
+	margin-right: 2%;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li::after {
+	color: #98971a;
+	content: " | ";
+}
+
+nav li:last-child::after {
+	content: "";
+}
+
+nav li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #fabd2f;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+/*
+ * Index
+ */
+
 /* Center whole table */
-table {
+table.index {
+	height: 90%;
 	width: 100%;
-	height: 100%;
 	display: flex;
 	position: absolute;
 	align-items: center;
@@ -47,4 +84,36 @@ tr.links {
 
 .links a {
 	padding: 1%;
+}
+
+/*
+ * Blog
+ */
+
+section.article {
+	margin: 5%;
+}
+
+section.article h2 a {
+	text-decoration: none;;
+	color: #7ba46d;
+}
+
+section.article h2 a:hover {
+	text-decoration: underline;
+}
+
+section.article p {
+	margin-left: 5%;
+	color: #ebdbb2;
+}
+
+section.article p.footer {
+	text-align: right;
+	color: #918870;
+}
+
+section.article p.footer a {
+	text-decoration: none;
+	color: #918870;
 }

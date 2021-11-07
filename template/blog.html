@@ -1,0 +1,17 @@
+{% include 'header.html' %}
+	{% for article in articles %}
+		<section class="article">
+			<h2><a href="article.php?id={{ article.id }}" title="{{ article.title }}">{{ article.title }}</a></h2>
+
+			<p>
+				{{ article.text }}
+			</p>
+
+			<p class="footer">
+				Published the <span title="{{ article.published | date('l d M Y', 'Europe/Oslo') }}">{{ article.published | date('d/m/Y', 'Europe/Oslo') }}</span> |
+				<a href="article.php?id={{ article.id }}#comments" title="Read the XX comment(s)">Comments: 0</a>
+			</p>
+		</section>
+	{% endfor %}
+
+{% include 'footer.html' %}
